@@ -46,9 +46,9 @@ public class ConsoleExercises {
         //Note:  Only first word in sentence captured.
 
         //#4
-        System.out.print("Enter a sentence: ");
-        String userInput = scanner.nextLine();
-        System.out.printf("Here is the sentence you entered: %s%n", userInput );
+//        System.out.print("Enter a sentence: ");
+//        String userInput = scanner.nextLine();
+//        System.out.printf("Here is the sentence you entered: %s%n", userInput );
 
         //Calculate the perimeter and area of Codeup's classrooms.
         System.out.print("Enter the length of your room in ft: ");
@@ -56,7 +56,11 @@ public class ConsoleExercises {
         System.out.print("Enter the width of your room in ft: ");
         String userWidth = scanner.nextLine();
 
-//        int decimalExample = Integer.parseInt("3");
+        int lengthParse = Integer.parseInt(userLength);
+        int widthParse = Integer.parseInt(userWidth);
+
+        System.out.println(lengthParse);
+        System.out.println(widthParse);
 
 
 
