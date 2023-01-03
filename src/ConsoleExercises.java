@@ -12,6 +12,7 @@ public class ConsoleExercises {
 
         //Explore the Scanner Class.
 
+//        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
         Scanner scanner = new Scanner(System.in);
 
         //#1
@@ -56,15 +57,15 @@ public class ConsoleExercises {
         System.out.print("Enter the width of your room in ft: ");
         String userWidth = scanner.nextLine();
 
-        int lengthParse = Integer.parseInt(userLength);
-        int widthParse = Integer.parseInt(userWidth);
+        float lengthParse = Float.parseFloat(userLength);
+        float widthParse = Float.parseFloat(userWidth);
 
-        System.out.println(lengthParse);
-        System.out.println(widthParse);
+        float area = lengthParse * widthParse;
+        float perimeter = (lengthParse * 2) + (widthParse * 2);
 
-
-
-
+        System.out.println(area);
+        System.out.println(perimeter);
+        System.out.printf("The area of your room is: %fft.%n The perimeter of your room is: %fft.%n", area, perimeter);
 
     }
 }
