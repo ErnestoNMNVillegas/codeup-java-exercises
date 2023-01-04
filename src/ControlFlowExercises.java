@@ -54,25 +54,27 @@ public class ControlFlowExercises {
 
         //// #2 ////
 
-        for (int i = 1; i <= 100; i++)
-        {
-            if (((i % 3) == 0) && ((i % 5) == 0)) {
-                System.out.println("FizzBuzz");
-            }
-            else if ((i % 3) == 0) {
-                System.out.println("Fizz");
-            }
-            else if ((i % 5) == 0) {
-                System.out.println("Buzz");
-            }
-            else {
-                System.out.println(i);
-            }
-        }
+//        for (int i = 1; i <= 100; i++)
+//        {
+//            if (((i % 3) == 0) && ((i % 5) == 0)) {
+//                System.out.println("FizzBuzz");
+//            }
+//            else if ((i % 3) == 0) {
+//                System.out.println("Fizz");
+//            }
+//            else if ((i % 5) == 0) {
+//                System.out.println("Buzz");
+//            }
+//            else {
+//                System.out.println(i);
+//            }
+//        }
 
         //// #3 ////
 
         Scanner scanner = new Scanner(System.in);
+
+        ///Note:  From walk-thru should have been do while.  confirmation equals in do{}.
 //
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
