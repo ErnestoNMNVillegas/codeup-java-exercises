@@ -54,21 +54,21 @@ public class ControlFlowExercises {
 
         //// #2 ////
 
-//        for (int i = 1; i <= 100; i++)
-//        {
-//            if (((i % 5) == 0) && ((i % 7) == 0)) {
-//                System.out.println("FizzBuzz");
-//            }
-//            else if ((i % 3) == 0) {
-//                System.out.println("Fizz");
-//            }
-//            else if ((i % 5) == 0) {
-//                System.out.println("Buzz");
-//            }
-//            else {
-//                System.out.println(i);
-//            }
-//        }
+        for (int i = 1; i <= 100; i++)
+        {
+            if (((i % 3) == 0) && ((i % 5) == 0)) {
+                System.out.println("FizzBuzz");
+            }
+            else if ((i % 3) == 0) {
+                System.out.println("Fizz");
+            }
+            else if ((i % 5) == 0) {
+                System.out.println("Buzz");
+            }
+            else {
+                System.out.println(i);
+            }
+        }
 
         //// #3 ////
 
@@ -102,62 +102,63 @@ public class ControlFlowExercises {
 //        }
 
         //// #4 ////
-        System.out.print("Enter your number grade (0-100) to receive your letter grade: ");
-        int userInputGrade = scanner.nextInt();
+//        System.out.print("Enter your number grade (0-100) to receive your letter grade: ");
+//        int userInputGrade = scanner.nextInt();
+//
+//        switch (userInputGrade) {
+//            case 10:
+//            case 9:
+//                System.out.println("A");
+//                break;
+//            case 8:
+//                System.out.println("B");
+//                break;
+//            case 7:
+//                System.out.println("C");
+//                break;
+//            case 6:
+//                System.out.println("D");
+//                break;
+//            case 5:
+//                System.out.println("Failure");
+//                break;
+//            default:
+//                System.out.println("F");
+//                break;
+//        };
+//
+//        System.out.print("Do you wish to continue (y/n)? ");
+//        char yesNo = scanner.next().charAt(0);
+//
+//                if (yesNo == 'y'){
+//                    System.out.print("Enter your number grade (0-100) to receive your letter grade: ");
+//                    int userInputGrade2 = scanner.nextInt();
+//
+//                    switch (userInputGrade2) {
+//                        case 10:
+//                        case 9:
+//                            System.out.println("A");
+//                            break;
+//                        case 8:
+//                            System.out.println("B");
+//                            break;
+//                        case 7:
+//                            System.out.println("C");
+//                            break;
+//                        case 6:
+//                            System.out.println("D");
+//                            break;
+//                        case 5:
+//                            System.out.println("F");
+//                            break;
+//                        default:
+//                            System.out.println("F");
+//                            break;
+//                    };
+//                } else {
+//                                System.out.println("Fine.");
+//                }
 
-        switch (userInputGrade) {
-            case 10:
-            case 9:
-                System.out.println("A");
-                break;
-            case 8:
-                System.out.println("B");
-                break;
-            case 7:
-                System.out.println("C");
-                break;
-            case 6:
-                System.out.println("D");
-                break;
-            case 5:
-                System.out.println("Failure");
-                break;
-            default:
-                System.out.println("F");
-                break;
-        };
-
-        System.out.print("Do you wish to continue (y/n)? ");
-        char yesNo = scanner.next().charAt(0);
-
-                if (yesNo == 'y'){
-                    System.out.print("Enter your number grade (0-100) to receive your letter grade: ");
-                    int userInputGrade2 = scanner.nextInt();
-
-                    switch (userInputGrade2) {
-                        case 10:
-                        case 9:
-                            System.out.println("A");
-                            break;
-                        case 8:
-                            System.out.println("B");
-                            break;
-                        case 7:
-                            System.out.println("C");
-                            break;
-                        case 6:
-                            System.out.println("D");
-                            break;
-                        case 5:
-                            System.out.println("F");
-                            break;
-                        default:
-                            System.out.println("F");
-                            break;
-                    };
-                } else {
-                                System.out.println("Fine.");
-                }
 
     }
 }
