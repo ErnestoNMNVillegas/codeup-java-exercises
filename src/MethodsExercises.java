@@ -76,7 +76,7 @@ public class MethodsExercises {
 //            long dice1=(int)(Math.random()* userInputDice +1);
 //            long dice2=(int)(Math.random()* userInputDice +1);
 
-            System.out.println("Dice 1 Roll: " + dice1 + ", " + "Dice 2 Roll: "+ dice2);
+            System.out.printf("Dice One Roll: %d%n Dice Two Roll: %d%n", dice1, dice2);
 
             System.out.print("Do you want to continue rolling dice (y/n)? ");
             String confirm = scanner.next();
