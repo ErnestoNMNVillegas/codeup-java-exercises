@@ -23,14 +23,43 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person ernie = new Person ("Ernie");
-        System.out.println(ernie.name);
-        System.out.println(ernie.getName());
 
-        ernie.setName("Ernesto");
-        System.out.println(ernie.getName());
+        //// Object basics ////
 
-        ernie.sayHello();
+//        Person ernie = new Person ("Ernie");
+//        System.out.println(ernie.name);
+//        System.out.println(ernie.getName());
+//
+//        ernie.setName("Ernesto");
+//        System.out.println(ernie.getName());
+//
+//        ernie.sayHello();
+
+        //// Understanding references ////
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
+        //true false
+
+//        Person person1 = new Person("John");
+//        Error already defined
+//        Person person2 = person1;
+//        Error already defined
+//        System.out.println(person1 == person2);
+        //true
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+        //John John Jane Jane
+
+
 
     }
 
