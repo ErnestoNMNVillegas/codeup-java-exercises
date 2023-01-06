@@ -42,7 +42,7 @@ public class MethodsExercises {
 
     //// #3 ////
     public static void factorial() {
-        Boolean confirmation;
+        boolean confirmation = true;
         do {
             System.out.print("Enter an integer between 1 and 10: ");
             long userInputFact = scanner.nextInt();
@@ -53,10 +53,10 @@ public class MethodsExercises {
                     factorialX *= i;
                 }
             } else {
-                factorial();
+                continue;
             }
-            System.out.printf("%d! = %d%n", userInputFact, factorialX);
 
+            System.out.printf("%d! = %d%n", userInputFact, factorialX);
 
             System.out.print("Do you want to continue factorialing (y/n)? ");
             String confirm = scanner.next();
@@ -66,15 +66,12 @@ public class MethodsExercises {
     }
 
     public static void diceRoll() {
-        Boolean confirmation;
+        boolean confirmation = true;
         do {
             System.out.print("Enter the number of sides for a pair of dice: ");
             long userInputDice = scanner.nextInt();
             long dice1 = randomDiceNum(userInputDice);
             long dice2 = randomDiceNum(userInputDice);
-
-//            long dice1=(int)(Math.random()* userInputDice +1);
-//            long dice2=(int)(Math.random()* userInputDice +1);
 
             System.out.printf("Dice One Roll: %d%n Dice Two Roll: %d%n", dice1, dice2);
 
@@ -107,7 +104,7 @@ public class MethodsExercises {
         factorial();
 
         //// #4 ////
-        diceRoll();
+//        diceRoll();
 
     }
 }
