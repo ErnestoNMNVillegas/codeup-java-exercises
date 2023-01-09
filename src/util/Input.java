@@ -48,7 +48,7 @@ public class Input {
         return num;
     }
 
-    double getDouble() {
+    public double getDouble() {
         System.out.print("Enter a double: ");
         return getScanner().nextDouble();
     }
