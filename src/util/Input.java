@@ -8,20 +8,27 @@ public class Input {
         return scanner;
     }
 
-    String getString() {
+//    public Input(){
+//        scanner = new Scanner(System.in);
+//    }
+    ///Note:  Above from walk-thru
+
+    public String getString() {
         System.out.print("Enter: ");
         String strInput = getScanner().nextLine();
         System.out.println(strInput);
         return strInput;
+//        return scanner.nextLine()
+        //Above from walk-thru
     }
 
-    boolean yesNo() {
+    public boolean yesNo() {
         System.out.print("Select y/n: ");
         String answer = scanner.nextLine();
         return answer.equalsIgnoreCase("y");
     }
 
-    int getInt(int min, int max) {
+    public int getInt(int min, int max) {
         System.out.print("Enter a number between" + min + " and "  + max + ": ");
         int num = scanner.nextInt();
 
@@ -32,12 +39,12 @@ public class Input {
         return num;
     }
 
-    int getInt() {
+    public int getInt() {
         System.out.print("Enter an integer: ");
         return getScanner().nextInt();
     }
 
-    double getDouble(double min, double max) {
+    public double getDouble(double min, double max) {
         System.out.print("Enter a number between" + min + " and "  + max + ": ");
         double num = scanner.nextDouble();
 
