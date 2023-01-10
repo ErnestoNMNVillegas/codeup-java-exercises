@@ -2,13 +2,13 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
-    public static Object addPerson(Object Arr, Object x) {
-//        int a[] = { 1, 8, 3 };
-
-        // Creating an array b[] of same size as a[]
-        Person[] newArr = new String[Arr.length + 1];
-
-    }
+//    public static Object addPerson(Object Arr, Object x) {
+////        int a[] = { 1, 8, 3 };
+//
+//        // Creating an array b[] of same size as a[]
+//        Person[] newArr = new String[Arr.length + 1];
+//
+//    }
 
     public static void main(String[] args) {
         //// #1 ////
