@@ -15,6 +15,8 @@ public class StudentTest {
         Billy.addGrade(90);
         Billy.addGrade(50);
 
+        System.out.println("Billy.getGrades() = " + Billy.getGrades());
+
         System.out.println("Billy.getGradeAverage() = " + Billy.getGradeAverage());
 
 
