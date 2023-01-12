@@ -63,7 +63,8 @@ public class GradesApplication {
 
                 if (students.get(q1Input) != null) {
                     Student student = students.get(q1Input);
-                    System.out.println("students.get(q1Input) = " + student.getGradeAverage());
+                    System.out.println("students.get(q1Input) = " + students.get(q1Input) + student.getName() + student.getGradeAverage() );
+//                    + student.getGradeAverage()
 
 
                 } else {
