@@ -4,7 +4,9 @@ public class InputTest {
 
     public static void main(String[] args) {
         Input input = new Input();
-        input.getString();
+//        input.getString();
+        String userString = input.getString("test");
+        System.out.print( userString);
         input.yesNo();
         input.getInt(1, 10);
         input.getInt();

@@ -3,24 +3,31 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner = new Scanner(System.in);
-    public Scanner getScanner() {
-        return scanner;
-    }
-
-//    public Input(){
-//        scanner = new Scanner(System.in);
+//    private Scanner scanner = new Scanner(System.in);
+//    public Scanner getScanner() {
+//        return scanner;
 //    }
-    ///Note:  Above from walk-thru
+    ////Original code.  Changed after walk-thru
 
-    public String getString() {
-        System.out.print("Enter: ");
-        String strInput = getScanner().nextLine();
-        System.out.println(strInput);
-        return strInput;
-//        return scanner.nextLine()
-        //Above from walk-thru
+    private Scanner scanner;
+
+    public Input(){
+        scanner = new Scanner(System.in);
     }
+    //Note:  Above from walk-thru
+
+//    public String getString() {
+//        System.out.print("Enter: ");
+//        String strInput = getScanner().nextLine();
+//        System.out.println(strInput);
+//        return strInput;
+//    }
+    ////Original code.  Changed after walk-thru
+        public String getString(String string) {
+            System.out.print(string + ": ");
+            return this.scanner.nextLine();
+    }
+
 
     public boolean yesNo() {
         System.out.print("Select y/n: ");
@@ -41,7 +48,7 @@ public class Input {
 
     public int getInt() {
         System.out.print("Enter an integer: ");
-        return getScanner().nextInt();
+        return this.scanner.nextInt();
     }
 
     public double getDouble(double min, double max) {
@@ -57,7 +64,7 @@ public class Input {
 
     public double getDouble() {
         System.out.print("Enter a double: ");
-        return getScanner().nextDouble();
+        return this.scanner.nextInt();
     }
 
 
