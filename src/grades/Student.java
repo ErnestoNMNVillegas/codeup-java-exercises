@@ -37,4 +37,11 @@ public class Student {
     public ArrayList<Integer> getGrades() {
         return grades;
     }
+
+    //// To String Method ////
+    public String toString(){
+        return name.toString() + ": " + grades.toString();
+    }
+
+
 }

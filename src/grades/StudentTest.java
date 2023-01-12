@@ -1,23 +1,24 @@
 package grades;
 
+
 public class StudentTest {
 
     public static void main(String[] args) {
 
         //// # 1 ////
-        Student Billy = new Student("Billy");
+        Student billy = new Student("Billy");
 
-        System.out.println("Billy.getName() = " + Billy.getName());
+        System.out.println("Billy.getName() = " + billy.getName());
 
-        Billy.addGrade(80);
-        Billy.addGrade(90);
-        Billy.addGrade(40);
-        Billy.addGrade(90);
-        Billy.addGrade(50);
+        billy.addGrade(80);
+        billy.addGrade(90);
+        billy.addGrade(40);
+        billy.addGrade(90);
+        billy.addGrade(50);
 
-        System.out.println("Billy.getGrades() = " + Billy.getGrades());
+        System.out.println("Billy.getGrades() = " + billy.getGrades());
 
-        System.out.println("Billy.getGradeAverage() = " + Billy.getGradeAverage());
+        System.out.println("Billy.getGradeAverage() = " + billy.getGradeAverage());
 
 
     }
