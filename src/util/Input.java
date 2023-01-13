@@ -23,9 +23,9 @@ public class Input {
 //        return strInput;
 //    }
     ////Original code.  Changed after walk-thru
-        public String getString(String string) {
-            System.out.print(string + ": ");
-            return this.scanner.nextLine();
+    public String getString(String string) {
+        System.out.println(string + ": ");
+        return this.scanner.nextLine();
     }
 
 
@@ -46,10 +46,27 @@ public class Input {
         return num;
     }
 
-    public int getInt() {
-        System.out.print("Enter an integer: ");
-        return this.scanner.nextInt();
-    }
+//    public int getInt() {
+//        System.out.print("Enter an integer: ");
+//        return this.scanner.nextInt();
+//    }
+
+        public int getInt() {
+//        int userResp = 0;
+        try{
+            int userResp = Integer.valueOf(getString("Enter an integer"));
+            System.out.println("Good job entering an integer!");
+            return Integer.valueOf(userResp);
+        }
+        catch (NumberFormatException e){
+            System.out.println("Wrong value entered: " + e.getMessage());
+            System.out.println("Here is some more detail:");
+            e.printStackTrace();
+            return getInt();
+        }
+//            return Integer.valueOf(userResp);
+        }
+
 
     public double getDouble(double min, double max) {
         System.out.print("Enter a number between" + min + " and "  + max + ": ");
@@ -62,10 +79,24 @@ public class Input {
         return num;
     }
 
+//    public double getDouble() {
+//        System.out.print("Enter a double: ");
+//        return this.scanner.nextInt();
+//    }
     public double getDouble() {
-        System.out.print("Enter a double: ");
-        return this.scanner.nextInt();
+        try{
+            Double userResp = Double.valueOf(getString("Enter a double"));
+            System.out.println("Valid input");
+            return Double.valueOf(userResp);
+        }
+        catch (NumberFormatException e){
+            System.out.println("Wrong value entered: " + e.getMessage());
+            System.out.println("Here is some more detail:");
+            e.printStackTrace();
+            return getDouble();
+        }
     }
+
 
 
 }
