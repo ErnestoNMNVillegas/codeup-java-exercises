@@ -38,18 +38,9 @@ public class GradesApplication {
         students.put("@AlertCoder", jorge);
         students.put("@AwakeCoder", seruh);
 
-//        System.out.println("students = " + students.toString());
-
-
-//        for(String keys : students.keySet()){
-//            System.out.print( keys + " | " );
-//        }
-
         Input input = new Input();
 
             boolean confirmation = true;
-
-
             do {
                 System.out.println("Welcome!" + "\n" + "Here are the GitHub usernames of our students:");
 
@@ -63,33 +54,19 @@ public class GradesApplication {
 
                 if (students.get(q1Input) != null) {
                     Student student = students.get(q1Input);
-                    System.out.println("students.get(q1Input) = " + students.get(q1Input) + student.getName() + student.getGradeAverage() );
-//                    + student.getGradeAverage()
-
+                    System.out.println("More info on GitHub username you entered: " + "Name: " + student.getName() + "\n" + "Grade Average: " + student.getGradeAverage() );
+                    String q2Input = input.getString("Would you like to see another student? (y/n)");
+                    confirmation = q2Input.equalsIgnoreCase("y");
 
                 } else {
                     System.out.println("Sorry, no student found with the GitHub username of: " + q1Input);
-                    String q2Input = input.getString("Would you like to see another student? (y/n)");
-                    confirmation = q2Input.equalsIgnoreCase("y");
+                    String q3Input = input.getString("Would you like to see another student? (y/n)");
+                    confirmation = q3Input.equalsIgnoreCase("y");
                 }
-
-
-
-
-//                long userInputDice = scanner.nextInt();
-//                long dice1 = randomDiceNum(userInputDice);
-//                long dice2 = randomDiceNum(userInputDice);
-//
-//                System.out.printf("Dice One Roll: %d%n Dice Two Roll: %d%n", dice1, dice2);
-//
-//                System.out.print("Do you want to continue rolling dice (y/n)? ");
-//                String confirm = scanner.next();
-//                confirmation = confirm.equalsIgnoreCase("y");
 
             } while (confirmation);
 
-
-
+            System.out.println("Goodbye, and have a wonderful day!");
 
     }
 }
