@@ -2,18 +2,16 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
-//    public static Object addPerson(Object Arr, Object x) {
-////        int a[] = { 1, 8, 3 };
-//
-//        // Creating an array b[] of same size as a[]
-//        Person[] newArr = new String[Arr.length + 1];
-//
-//    }
+    public static Person[] addPerson(Person[] array, Person newPerson) {
+        Person[] people = Arrays.copyOf(array, array.length + 1);
+        people[array.length] = newPerson;
+        return people;
+    }
 
     public static void main(String[] args) {
         //// #1 ////
-//        int[] numbers = {1, 2, 3, 4, 5};
-//        System.out.println(numbers);
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
 //    }
         //Result:  [I@2f92e0f4
 
@@ -23,12 +21,17 @@ public class ArraysExercises {
             System.out.println(persons.getName());
         }
 
-        for (int i = 0; i < people.length; i++) {
-            System.out.println(people[i]);
+//        for (int i = 0; i < people.length; i++) {
+//            System.out.println(people);
+//        }
+
+        Person homie = new Person("Homie");
+        people = addPerson(people, homie);
+
+        for (Person persons : people) {
+            System.out.println(persons.getName());
         }
 
 
     }
-
-
 }
