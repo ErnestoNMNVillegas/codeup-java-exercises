@@ -56,7 +56,8 @@ public class Input {
         try{
             int userResp = Integer.valueOf(getString("Enter an integer"));
             System.out.println("Good job entering an integer!");
-            return Integer.valueOf(userResp);
+            System.out.println("userResp = " + userResp);
+            return userResp;
         }
         catch (NumberFormatException e){
             System.out.println("Wrong value entered: " + e.getMessage());

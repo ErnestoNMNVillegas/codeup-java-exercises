@@ -13,6 +13,8 @@ public class ServerNameGenerator {
         String adjectiveServer = randElem(adjective);
         System.out.println("Here is your server name: ");
         System.out.println(adjectiveServer + "-" + nounServer);
+
+
     }
 
     }
